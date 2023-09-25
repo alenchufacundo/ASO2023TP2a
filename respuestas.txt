@@ -1,0 +1,6 @@
+Los problemas que se ven a simple vista en el codigo, son: 
+-No se garantiza que los dos "comensales" coman de forma alternada ni equitativamente.
+-Hay errores de impresion en consola como en los saltos de linea "/n".
+
+El problema que ocurre se llama "condición de carrera" o "race condition". Este concepto ocurre cuando múltiples hilos de ejecución acceden y modifican recursos compartidos de manera concurrente, lo que puede llevar a resultados inesperados y errores en la ejecución del programa. En este caso, los dos comensales intentan acceder y modificar la cantidad de hamburguesas restantes de manera concurrente, lo que provoca que la distribución de las hamburguesas no sea equitativa y que se produzcan resultados inconsistentes.
+
